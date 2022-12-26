@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- link CSS and Bootstrap -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+    <title>Crypto Price</title>
+  </head>
+  <body>
+    <section class="container">
+      <div id="header">
+        <div class="navigation">
+          <!-- Buttons for dark mode -->
+          <span id="dark"> Dark Mode: </span>
+          <button class="dark-mode">ON</button>
+          <button class="dark-mode">OFF</button>
+
+          <!-- Buttons for navigation -->
+          <a class="nav-bar" href="#setting">Settings</a>
+          <a class="nav-bar" href="#search">Search</a>
+          <a class="nav-bar" href="#contact">Contact</a>
+          <a class="nav-bar" href="#about">About</a>
+          <a class="nav-bar" href="#home">Home</a>
+        </div>
+        <h1 id="heading">Crypto Price</h1>
+      </div>
+
+      <!-- An alert message if data is not loaded -->
+      <div id="alert-message">
+        <h3>Data loading failed. Please click refresh to load again</h3>
+        <a id="btn-refresh" onclick="window.location.reload(true)">Refresh</a>
+      </div>
+      <div id="searchWrapper">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Search Crypto"
+        />
+      </div>
+    </section>
+
+    <!-- Coin details are given here -->
+    <div id="coinList"></div>
+    <script src="API.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

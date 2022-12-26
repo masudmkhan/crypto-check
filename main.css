@@ -1,0 +1,149 @@
+body {
+    background-color: rgba(190, 189, 189, 0.103);
+    margin: 0;
+}
+
+#header {
+    background-color: rgb(138, 130, 243);
+    padding-bottom: 40px;
+}
+
+#dark {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.dark-mode {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, grey, white);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.dark-mode:hover {
+    font-weight: bold;
+    background-image: linear-gradient(45deg, white, grey)
+}
+
+.nav-bar {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    float: right;
+}
+
+.nav-bar:hover {
+    font-size: 17px;
+}
+
+#heading {
+    margin: auto;
+    align-items: center;
+    border: 2px rgb(53, 57, 61);
+    border-radius: 30px;
+    width: 230px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(138, 130, 243);
+    background-color: white;
+}
+
+#alert-message {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+#btn-refresh {
+    background-color: rgb(32, 221, 32);
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-refresh:hover {
+    background-color: green;
+}
+
+#searchWrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#searchBar {
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 30%;
+    display: flex;
+    border: 3px solid rgb(138, 130, 243);
+}
+
+#coinList {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+.character {
+    border: 1px;
+    padding-left: 3%;
+    text-align: left;
+    margin: 7%;
+    width: 300px;
+    height: 160px;
+    box-shadow: 2px 2px 2px 2px rgb(197, 193, 255);
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(197, 193, 255);
+    display: flex;
+}
+
+.name-price {
+    width: 65%;
+}
+
+#currency-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#currency-name {
+    font-size: 27px;
+}
+
+.rank {
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media (max-width: 860px) {
+    #coinList {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 861px) and (max-width: 1220px) {
+    #coinList {
+        grid-template-columns: 50% 50%;
+    }
+}
